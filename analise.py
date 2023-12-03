@@ -24,7 +24,7 @@ print(ticket_medio)
 # Enviar e-mail com relatório
 outlook = win32.Dispatch('outlook.application')
 mail = outlook.CreateItem(0)
-mail.To = 'daniellaavila@outlook.com.br'
+mail.To = 'seu email aqui'
 mail.Subject = 'Relatório com Python 1.0'
 mail.HTMLBody = f'''
 <p>Prezados,</p>
@@ -47,7 +47,7 @@ mail.HTMLBody = f'''
 <p>Qualquer dúvida, estou à disposição,</p> 
 
 <p>Att..</p>
-<p>Rodrigo Lopes Emidio da Costa</p>
+<p>Seu Nome Aqui</p>
 
 '''
 mail.Send()
